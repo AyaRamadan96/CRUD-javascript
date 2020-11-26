@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/index_style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <h3>Bookmarker</h3>
+            </div>
+        </header>
+
+        <div class="container mt-3">
+            <div class="form text-center">
+                <h2>Bookmark your favorite sites</h2>
+                <div>
+                    <p class="f-title">Site Name</p>
+                    <input placeholder="Bookmark Name"type="text" class="mb-3" id="siteNameInp">
+                    <div  id="nameError"></div>
+                    <p class="f-title">Site URL</p>
+                    <input placeholder="Website URL" type="text" class="mb-3" id="SiteUrlInp">
+                    <div  id="urlError"></div>
+                    <div>
+                        <button type="submit" class="btn btn-primary" onclick="addBookmark()">Submit</button>
+                        <span id="addUpdate"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="bookmarkBody"></div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>© 2019 Bookmarker Inc.</p>
+            </div>
+        </footer>
+
+        <script src="first.js"></script>
+    </body>
+</html>
